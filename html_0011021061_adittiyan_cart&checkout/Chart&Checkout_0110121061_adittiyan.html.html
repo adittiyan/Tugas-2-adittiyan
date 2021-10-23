@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style> *{padding: 0;margin: 0;box-sizing: border-box;}</style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+<body style="max-width: 1000px; border: 1px solid black; margin:">
+  <header style="background-color: gainsboro;" >
+    <nav style="display: flex;margin-right: 50px; padding: 10px;border-bottom: 1px solid black;" > 
+      <ul style="display: flex; list-style-type: none;gap: 10px;margin: right 5px;" >
+        <li>
+          <a style="text-decoration: none;" href="">adit tiyan.com><a>
+        </li>
+      </ul>
+
+      <div style="display: flex;" class="menu-ul"> 
+         <!-- Home --> 
+          <a style="text-decoration: none;" href="/">Home</a> |
+         
+         <!--- Current -->
+          <a style="text-decoration: none;" href="/events">Current Events</a> |
+        
+         <!-- Contact -->
+          <a style="text-decoration: none;" href="/contact">Contact us</a>
+         
+      </div> 
+
+      <ul style="  display: flex;list-style-type: none;gap: 10px;margin-left: auto;">
+        <li>
+          <i class="bi bi-search"></i>
+        </li>
+        <li style="display: flex;gap: 5px;">
+          <i class="bi bi-cart"></i>
+          <p>Cart(1)</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div style="display: flex;gap: 20px;margin-top: 100px;padding: 10px;">
+    <main style="width: 80%;"> 
+      <h1>Your Cart</h1>
+      <table style="  width: 100%;border-collapse: collapse;"> 
+        <thead style=" border-top: 1px solid black;border-bottom: 1px solid black;">
+          <tr>
+            <td class="col-head">Item</td>
+            <td class="col-head">Price</td>
+            <td class="col-head">Quantity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style=" display: flex;align-items: center;">
+              <img width="200" src="https://cf.shopee.co.id/file/365038da7db2eeff9dad803d076d93fd;)" alt="">
+              <p>Tshirt <br> Size XL</p>
+            </td>
+            <td>
+              <b>Rp35.000</b>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot style=" border-top: 1px solid black;border-bottom: 1px solid black;">
+          <tr>
+            <td class="col-head" colspan="3" align="right">Subtotal: <b>Rp35.000</b></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <aside style="width: 40%;background-color:grey;padding: 10px;display: grid;align-items: center;"> 
+      <h2>Summary ( 1 item )</h2>
+      <table style="width: 100%;">
+        <tr style="padding: 10px 0;">
+          <td>Subtotal</td>
+          <td align="right">$Rp35.000</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td align="right">-</td>
+        </tr>
+        <tr>
+          <td>Est. Taxes</td>
+          <td align="right">-</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td align="right">Rp35.000</td>
+        </tr>
+      </table>
+       <a style="display: flex;justify-content: center;background-color:burlywood;width: 100%;text-decoration: none;padding: 10px 0;" href="adit_checkout.html">Checkout</a>
+    </aside>
+  </div>
+
+  <footer style=" margin-top: 100px;border-top: 1px solid black;padding: 10px;display: grid;gap: 10px;">
+    <div style="display: flex;gap: 5px;">
+      <a style="text-decoration: none;" href="">Site Name</a>
+      <a style="text-decoration: none;" href="">Category</a> |
+      <a style="text-decoration: none;" href="">Category</a> |
+      <a style="text-decoration: none;" href="">Category</a> 
+      <a style="text-decoration: none;margin-left: auto;" href="">Stay In Touch</a>
+    </div>
+    <div style="display: flex;gap: 5px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+      </svg>
+      <div style=" display: flex; margin-left: auto;" >
+        <input type="text" placeholder="Enter Email">
+        <button style="background-color: red;color: wheat;" type="button">subcribe</button>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
